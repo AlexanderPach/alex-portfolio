@@ -1,17 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+`use client`;
+import HomePage from '@/components/HomePage';
 import NavBar from '@/components/NavBar'
-import LinkList from '@/components/LinkList'
 import { Box, ChakraProvider } from '@chakra-ui/react'
-import HomePage from '@/components/HomePage'
-import Footer from '@/components/Footer'
+import React from 'react';
 
 export default function Home() {
   return (
     <ChakraProvider>
     <Box bgColor={'blue.100'}>
         <NavBar />
-        <HomePage />
+        <HomePage/>
     </Box>
     </ChakraProvider>
   )

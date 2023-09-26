@@ -10,8 +10,8 @@ function ProjectList() {
   return (
     <Box style={{maxWidth: "800px", margin: "0 auto"}}>
     <Box display={"flex"} flexWrap={"wrap"} justifyContent={'center'}>
-            {projectData.map((item) => (
-                    <Card maxW='sm' style={{ margin: "5px"}}>
+            {projectData.map((item, index) => (
+                    <Card maxW='sm' style={{ margin: "5px"}} key={index}>
                     <CardBody>
                       <Stack mt='6' spacing='3'>
                             <Heading size='md'>{item.project_name}</Heading>

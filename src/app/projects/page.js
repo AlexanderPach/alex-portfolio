@@ -1,13 +1,16 @@
 import { Box, ChakraProvider } from '@chakra-ui/react'
 import NavBar from '@/components/NavBar'
 import Projects from '@/components/Projects';
+import style from '../projects/style.css'
 
 function ProjectPage() {
     return (
         <ChakraProvider>
-            <Box bgColor={'blue.100'}>
+            <Box bg={'blue.100'}>
                 <NavBar />
-                <Projects/>
+                <div className="project-container">
+                    <Projects/>
+                </div>
             </Box>
     </ChakraProvider>
     )

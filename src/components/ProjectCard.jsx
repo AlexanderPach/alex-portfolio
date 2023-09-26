@@ -1,8 +1,10 @@
-function ProjectCard() {
-    return (
-        <div>
+import { Box } from "@chakra-ui/react"
 
-        </div>
+function ProjectCard({data}) {
+    return (
+        <Box>
+            <div>{data.project_name}</div>
+        </Box>
     )
 }
 

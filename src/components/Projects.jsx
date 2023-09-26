@@ -1,7 +1,9 @@
+import ProjectList from "./ProjectList"
+
 function Projects() {
     return (
         <div>
-            Projects
+            <ProjectList />
         </div>
     )
 }

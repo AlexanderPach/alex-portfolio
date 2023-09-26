@@ -101,7 +101,7 @@ function ContactPage() {
                     <Input type='email' value={email} onChange={handleEmailChange} bg={'white'} placeholder='Email'></Input>
                     {!isError ? (
                     <FormHelperText>
-                        Enter the email you'd like for me to respond back to.
+                        Enter the email you would like for me to respond back to.
                     </FormHelperText>
                     ) : (
                     <FormErrorMessage>Email is required.</FormErrorMessage>
